@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Usamos min-height para garantir que o conteúdo ocupe pelo menos a altura da tela */
+    padding: 20px; /* Adiciona um espaçamento nas laterais para telas menores */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px; /* Tamanho padrão para desktop */
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px; /* Tamanho padrão para desktop */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px; /* Tamanho padrão para desktop */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave ao hover */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para tablets e telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 22px; /* Reduz o tamanho do título */
+    }
+
+    .question p {
+        font-size: 15px; /* Reduz o tamanho da fonte das perguntas */
+    }
+
+    label {
+        font-size: 13px; /* Reduz o tamanho da fonte das opções */
+    }
+
+    button {
+        font-size: 15px; /* Reduz o tamanho da fonte do botão */
+    }
+}
+
+/* Para dispositivos móveis (telas menores que 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Título ainda menor para telas pequenas */
+    }
+
+    .question p {
+        font-size: 14px; /* Fonte menor para perguntas */
+    }
+
+    label {
+        font-size: 12px; /* Fonte menor para opções */
+    }
+
+    button {
+        font-size: 14px; /* Fonte menor para o botão */
+        padding: 8px; /* Reduz o padding do botão */
+    }
+
+    .container {
+        padding: 15px; /* Reduz o padding do container */
+    }
+}
+
+/* Para telas muito pequenas (menores que 320px) */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 18px; /* Título ainda menor */
+    }
+
+    .question p {
+        font-size: 13px; /* Fonte menor para perguntas */
+    }
+
+    label {
+        font-size: 11px; /* Fonte menor para opções */
+    }
+
+    button {
+        font-size: 13px; /* Fonte menor para o botão */
+        padding: 6px; /* Reduz o padding do botão */
+    }
+}

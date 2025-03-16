@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Completo - Aulas 1 a 8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionário Completo - Aulas 1 a 8</h1>
+        <form id="quiz-form">
+            <!-- Aula 1: Introdução à Administração -->
+            <div class="question">
+                <p>1. Qual é o foco da Administração Científica, proposta por Frederick Taylor?</p>
+                <label><input type="radio" name="q1" value="a"> a) Relações humanas e motivação.</label>
+                <label><input type="radio" name="q1" value="b"> b) Eficiência e produtividade.</label>
+                <label><input type="radio" name="q1" value="c"> c) Burocracia e hierarquia.</label>
+                <label><input type="radio" name="q1" value="d"> d) Adaptação às contingências.</label>
+            </div>
+
+            <!-- Aula 2: Funções Administrativas -->
+            <div class="question">
+                <p>2. Quais são as quatro funções administrativas clássicas?</p>
+                <label><input type="radio" name="q2" value="a"> a) Planejar, Organizar, Dirigir, Controlar.</label>
+                <label><input type="radio" name="q2" value="b"> b) Recrutar, Selecionar, Treinar, Avaliar.</label>
+                <label><input type="radio" name="q2" value="c"> c) Estratégia, Tática, Operacional, Controle.</label>
+                <label><input type="radio" name="q2" value="d"> d) Missão, Visão, Valores, Objetivos.</label>
+            </div>
+
+            <!-- Aula 3: Planejamento Estratégico -->
+            <div class="question">
+                <p>3. O que é a "Estratégia do Oceano Azul"?</p>
+                <label><input type="radio" name="q3" value="a"> a) Competição em mercados saturados.</label>
+                <label><input type="radio" name="q3" value="b"> b) Criação de novos mercados sem concorrência.</label>
+                <label><input type="radio" name="q3" value="c"> c) Redução de custos operacionais.</label>
+                <label><input type="radio" name="q3" value="d"> d) Foco em produtos de alta qualidade.</label>
+            </div>
+
+            <!-- Aula 4: Missão, Visão e Valores -->
+            <div class="question">
+                <p>4. Qual é o propósito da missão de uma organização?</p>
+                <label><input type="radio" name="q4" value="a"> a) Definir o lucro esperado.</label>
+                <label><input type="radio" name="q4" value="b"> b) Explicar a razão de existir da empresa.</label>
+                <label><input type="radio" name="q4" value="c"> c) Estabelecer metas de curto prazo.</label>
+                <label><input type="radio" name="q4" value="d"> d) Definir a estrutura organizacional.</label>
+            </div>
+
+            <!-- Aula 5: Indicadores de Desempenho (KPIs) -->
+            <div class="question">
+                <p>5. O que é um KPI?</p>
+                <label><input type="radio" name="q5" value="a"> a) Um indicador de desempenho usado para medir o sucesso de uma estratégia.</label>
+                <label><input type="radio" name="q5" value="b"> b) Um método de avaliação de desempenho individual.</label>
+                <label><input type="radio" name="q5" value="c"> c) Um tipo de treinamento para colaboradores.</label>
+                <label><input type="radio" name="q5" value="d"> d) Um modelo de gestão de projetos.</label>
+            </div>
+
+            <!-- Aula 6: Modelagem Organizacional -->
+            <div class="question">
+                <p>6. Qual é a diferença entre estrutura formal e informal?</p>
+                <label><input type="radio" name="q6" value="a"> a) A estrutura formal é planejada, enquanto a informal surge espontaneamente.</label>
+                <label><input type="radio" name="q6" value="b"> b) A estrutura formal é baseada em amizades, e a informal em hierarquia.</label>
+                <label><input type="radio" name="q6" value="c"> c) A estrutura formal é flexível, e a informal é rígida.</label>
+                <label><input type="radio" name="q6" value="d"> d) A estrutura formal é focada em resultados, e a informal em processos.</label>
+            </div>
+
+            <!-- Aula 7: Recrutamento, Seleção e Treinamento -->
+            <div class="question">
+                <p>7. Qual é a principal vantagem do recrutamento interno?</p>
+                <label><input type="radio" name="q7" value="a"> a) Traz novas ideias e experiências.</label>
+                <label><input type="radio" name="q7" value="b"> b) Reduz custos e tempo de recrutamento.</label>
+                <label><input type="radio" name="q7" value="c"> c) Aumenta a diversidade na empresa.</label>
+                <label><input type="radio" name="q7" value="d"> d) Garante a contratação de especialistas externos.</label>
+            </div>
+
+            <!-- Aula 8: Avaliação de Desempenho e Liderança -->
+            <div class="question">
+                <p>8. Qual estilo de liderança é caracterizado pela alta autonomia dos colaboradores?</p>
+                <label><input type="radio" name="q8" value="a"> a) Autocrática.</label>
+                <label><input type="radio" name="q8" value="b"> b) Democrática.</label>
+                <label><input type="radio" name="q8" value="c"> c) Laissez-Faire.</label>
+                <label><input type="radio" name="q8" value="d"> d) Transformacional.</label>
+            </div>
+
+            <button type="submit">Enviar Respostas</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Seu Resultado:</h2>
+            <p id="score"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

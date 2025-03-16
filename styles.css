@@ -61,7 +61,29 @@ button:hover {
 
 #result {
     margin-top: 20px;
-    text-align: center;
+    text-align: left; /* Alinhamento à esquerda para melhorar a leitura da lista */
+}
+
+#result h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#result ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    padding: 0;
+    margin: 0;
+}
+
+#result ul li {
+    background-color: #f8f9fa; /* Fundo claro para cada item da lista */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Borda sutil para destacar os itens */
+    font-size: 14px;
+    color: #333;
 }
 
 .hidden {
@@ -87,6 +109,14 @@ button:hover {
     button {
         font-size: 15px; /* Reduz o tamanho da fonte do botão */
     }
+
+    #result h3 {
+        font-size: 16px; /* Reduz o tamanho do título da lista */
+    }
+
+    #result ul li {
+        font-size: 13px; /* Reduz o tamanho da fonte dos itens da lista */
+    }
 }
 
 /* Para dispositivos móveis (telas menores que 480px) */
@@ -111,6 +141,14 @@ button:hover {
     .container {
         padding: 15px; /* Reduz o padding do container */
     }
+
+    #result h3 {
+        font-size: 15px; /* Reduz o tamanho do título da lista */
+    }
+
+    #result ul li {
+        font-size: 12px; /* Reduz o tamanho da fonte dos itens da lista */
+    }
 }
 
 /* Para telas muito pequenas (menores que 320px) */
@@ -130,5 +168,13 @@ button:hover {
     button {
         font-size: 13px; /* Fonte menor para o botão */
         padding: 6px; /* Reduz o padding do botão */
+    }
+
+    #result h3 {
+        font-size: 14px; /* Reduz o tamanho do título da lista */
+    }
+
+    #result ul li {
+        font-size: 11px; /* Reduz o tamanho da fonte dos itens da lista */
     }
 }

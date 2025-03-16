@@ -23,6 +23,8 @@ document.getElementById("quiz-form").addEventListener("submit", function (event)
         q18: "b", // Aula 5
         q19: "a", // Aula 6
         q20: "a", // Aula 6
+        q21: "b", // Empresas Holocráticas
+        q22: "a", // Valores da 3ª Categoria
     };
 
     let score = 0;
